@@ -454,6 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa0b124128b949dbba4657f5852109b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prompt: In the extended virtual world, what is the newly coined word that combines
+    "meta," which means virtual and transcendent, and "universe," which means world
+    and universe?
 --- !u!4 &1085676586
 Transform:
   m_ObjectHideFlags: 0
