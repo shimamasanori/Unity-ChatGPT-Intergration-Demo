@@ -20,12 +20,12 @@ Once generated, copy the key value (**note that the generated key cannot be re-d
 - Verify the supported model (this document uses the "gpt-3.5-turbo" model).
 
 ### Windows
-1. cURLのインストール確認
+1. Verification of cURL Installation
 ```
 curl --version
 ```
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/291a329c-0ec1-f813-f4df-1b1cfd3b4434.png)
-2. cURL命令作成
+2. Creating cURL Command
 ```
 curl https://api.openai.com/v1/chat/completions ^
 -H "Content-Type: application/json" ^
@@ -33,7 +33,7 @@ curl https://api.openai.com/v1/chat/completions ^
 -d "{\"model\": \"gpt-3.5-turbo\", \"messages\": [{\"role\": \"user\", \"content\": \"Say this is a test\"}], \"max_tokens\": 5}"
 ```
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/0be0dc65-6462-1e5b-c5e8-45c141f4d514.png)
-下線にKeyを入力
+Enter the key in the underline
 
 ### MacOS
 ```
@@ -59,7 +59,7 @@ curl https://api.openai.com/v1/chat/completions \
 2. Search for and install Newtonsoft.Json in the NuGet Packages tab.
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/600e4db1-8b09-61f9-ac63-fc35d1fb0b00.png)
 
-## 📜 スクリプト作成
+## 📜 Script Creation
 ```csharp
 using System.Collections;
 using UnityEngine;
