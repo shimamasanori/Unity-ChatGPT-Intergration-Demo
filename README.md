@@ -4,5 +4,5 @@ This repository demonstrates the integration of ChatGPT with Unity, showcasing h
 <br/>
 
 Tutorials
-- KR
+- [KR](https://sugar0810.tistory.com/89)
 - [JP](https://qiita.com/sugar0810/items/1628ffddcf46c1087a44)
