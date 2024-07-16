@@ -1,31 +1,31 @@
 # Unity ChatGPT Intergration Demo
-This repository demonstrates the integration of ChatGPT with Unity, showcasing how to use ChatGPT's capabilities within a Unity environment to create interactive and intelligent applications.
+This repository demonstrates the process of using the ChatGPT model with features within the Unity environment using the OpenAI API.
 
 Other Langs Tutorials
 > - [Korean](https://sugar0810.tistory.com/89)
-> - [Japanese](https://qiita.com/sugar0810/items/1628ffddcf46c1087a44)
+> - [Japanese](https://note.com/ugee/n/naf13591d0f33#af9dd08b-6c69-4658-9f91-a8d296fbe647)
 
 ## 🔐 Obtaining an OpenAI API Key
 Create an OpenAI account and obtain an API key. You can get the key issued from the [OpenAI API docs](https://platform.openai.com/docs/overview).
-1. Login to OpenAI
-2. Since registering a card is mandatory, go to the [Billing](https://platform.openai.com/settings/organization/billing/overview) tab and register your card.
+1.Login to OpenAI
+2.Since registering a card is mandatory, go to the [Billing](https://platform.openai.com/settings/organization/billing/overview) tab and register your card.
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/1577ff03-7581-6de5-c11a-748e8637576b.png)
 To prevent excessive charges, go to the Limits tab and set Usage limits.
-3. Go to [View API Keys](https://platform.openai.com/api-keys) and create a New Secret Key.
+3.Go to [View API Keys](https://platform.openai.com/api-keys) and create a New Secret Key.
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/f7a21351-27ca-d235-cfbe-1d27f426354b.png)
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/8519ead2-2087-0fbd-7274-53b14ab5c1d9.png)
 Once generated, copy the key value (**note that the generated key cannot be re-displayed**).
-4. Verify that the key has been generated correctly.
+4.Verify that the key has been generated correctly.
 - Check the saved key.
 - Verify the supported model (this document uses the "gpt-3.5-turbo" model).
 
 ### Windows
-1. Verification of cURL Installation
+1.Verification of cURL Installation
 ```
 curl --version
 ```
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/291a329c-0ec1-f813-f4df-1b1cfd3b4434.png)
-2. Creating cURL Command
+2.Creating cURL Command
 ```
 curl https://api.openai.com/v1/chat/completions ^
 -H "Content-Type: application/json" ^
@@ -54,9 +54,8 @@ curl https://api.openai.com/v1/chat/completions \
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/4a0f0c0a-82d1-a00b-0ce2-a43a67888b09.png)
 
 ## ⚙️ Installing Packages and Preparing for Communication
-1. Use the package manager to install NuGetForUnity from the URL.
+Use the Package Manager to install NuGetForUnity from the URL. Then, search for and install Newtonsoft.Json in the NuGet Packages tab.
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/edfd3d9c-4c08-12a0-cf1f-b12a9445a6df.png)
-2. Search for and install Newtonsoft.Json in the NuGet Packages tab.
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3748634/600e4db1-8b09-61f9-ac63-fc35d1fb0b00.png)
 
 ## 📜 Script Creation
